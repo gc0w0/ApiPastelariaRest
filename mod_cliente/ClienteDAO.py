@@ -12,11 +12,11 @@ def get_cliente(id: int):
     return {"msg": "get um executado"}, 200
 
 @router.post("/cliente/", tags=["Cliente"])
-def post_cliente():
+def post_cliente(c: Cliente):
     return {"msg": "post executado"}, 200
 
 @router.put("/cliente/{id}", tags=["Cliente"])
-def put_cliente(id: int):
+def put_cliente(id: int, c: Cliente ):
     return {"msg": "put executado"}, 201
 
 @router.delete("/cliente/{id}", tags=["Cliente"])

@@ -1,5 +1,5 @@
-# fiz esse tbm baseado no funcionario.py hehe
 from pydantic import BaseModel 
+# fiz esse tbm baseado no funcionario.py hehe
 
 class Cliente(BaseModel):
     id_cliente: int = None
