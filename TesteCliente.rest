@@ -10,8 +10,8 @@ content-type: application/json
     "nome" : "Abc da Silva",
     "cpf" : "01923874656",
     "telefone" : "49988234567",
-    "Compra_fiado" : 01092023,
-    "dia_fiado" : 01,
+    "compra_fiado" : 12,
+    "dia_fiado" : 12,
     "senha" : "bolinhas"
 }
 
@@ -20,12 +20,12 @@ PUT http://127.0.0.1:8000/cliente/2 HTTP/1.1
 content-type: application/json
 
 {
-    "nome" : "Bolinhas dos Testes",
-    "cpf" : "12345678909",
-    "telefone" : "49898989",
-    "Compra_fiado" : 02062023,
-    "dia_fiado" : 06,
-    "senha" : "littleballs"
+   "nome" : "Abc da Silva",
+    "cpf" : "01923874656",
+    "telefone" : "49988234567",
+    "compra_fiado" : 0,
+    "dia_fiado" : 12,
+    "senha" : "bolinhas"
 }
 
 ### Verbo DELETE - excluir

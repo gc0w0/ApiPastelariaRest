@@ -13,7 +13,7 @@ def get_cliente(id: int):
 
 @router.post("/cliente/", tags=["Cliente"])
 def post_cliente(c: Cliente):
-    return {"msg": "post executado"}, 200
+    return {"msg": "post executado", "nome": c.nome, "cpf": c.cpf, "telefone": c.telefone}, 200
 
 @router.put("/cliente/{id}", tags=["Cliente"])
 def put_cliente(id: int, c: Cliente ):
