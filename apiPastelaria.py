@@ -1,4 +1,3 @@
-
 from fastapi import FastAPI
 from settings import HOST, PORT, RELOAD
 
