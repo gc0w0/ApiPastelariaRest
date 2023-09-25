@@ -7,6 +7,13 @@ router = APIRouter()
 import db
 from mod_cliente.ClienteModel import ClienteDB
 
+# import da segurança #ATV 8
+from fastapi import Depends
+import security
+
+# dependências de forma global
+router = APIRouter( dependencies=[Depends(security.verify_token), Depends(security.verify_key)] ) #ATV 8
+
 @router.get("/cliente/", tags=["Cliente"])
 def get_cliente():
     return {"msg": "get todos executado"}, 200

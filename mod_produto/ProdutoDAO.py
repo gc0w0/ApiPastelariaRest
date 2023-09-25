@@ -6,6 +6,13 @@ router = APIRouter()
 import db
 from mod_produto.ProdutoModel import ProdutoDB
 
+# import da segurança #ATV 8
+from fastapi import Depends
+import security
+
+# dependências de forma global
+router = APIRouter( dependencies=[Depends(security.verify_token), Depends(security.verify_key)] ) #ATV 8
+
 # Criar as rotas/endpoints: GET, POST, PUT, DELETE
 
 @router.get("/produto/", tags=["Produto"])
