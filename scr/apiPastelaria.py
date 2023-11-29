@@ -1,5 +1,5 @@
-from fastapi import FastAPI
 from settings import HOST, PORT, RELOAD
+from fastapi import FastAPI
 
 # import das classes com as rotas/endpoints
 from mod_funcionario import FuncionarioDAO

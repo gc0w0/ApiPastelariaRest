@@ -1,7 +1,6 @@
 from fastapi import APIRouter
 from mod_funcionario.Funcionario import Funcionario
 router = APIRouter()
-
 #import da persistencia
 import db
 from mod_funcionario.FuncionarioModel import FuncionarioDB
